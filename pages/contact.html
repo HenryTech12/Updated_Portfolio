@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fakorode Henry - Contact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes scalePulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes loaderFade {
+            from {
+                opacity: 1;
+            }
+
+            to {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+
+        @keyframes checkmark {
+            0% {
+                transform: scale(0);
+            }
+
+            50% {
+                transform: scale(1.2);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes gradientX {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+
+        .stagger-1 {
+            animation-delay: 0.1s;
+        }
+
+        .stagger-2 {
+            animation-delay: 0.2s;
+        }
+
+        .stagger-3 {
+            animation-delay: 0.3s;
+        }
+
+        .hover\:pulse:hover {
+            animation: scalePulse 0.3s ease-in-out;
+        }
+
+        #loader {
+            animation: loaderFade 1s ease-out forwards 0.5s;
+        }
+
+        .nav-slide-in {
+            animation: fadeIn 0.3s ease-out forwards;
+        }
+
+        .success-check {
+            animation: checkmark 0.5s ease-out forwards;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(270deg, #0A0A0A, #1A1A1A, #0A0A0A);
+            background-size: 200% 200%;
+            animation: gradientX 15s ease infinite;
+        }
+
+        .hover\:glow:hover {
+            box-shadow: 0 0 15px rgba(255, 165, 0, 0.5);
+        }
+    </style>
+</head>
+
+<body class="bg-black text-white font-sans antialiased">
+    <!-- Loader -->
+    <div id="loader" class="fixed inset-0 bg-black flex items-center justify-center z-50">
+        <i class="fas fa-spinner fa-spin text-orange-500 text-4xl"></i>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full gradient-bg backdrop-blur-md z-40 shadow-lg">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center relative z-10">
+            <a href="index.html" class="text-2xl font-bold text-orange-500 font-fira-code"><i
+                    class="fas fa-code mr-2"></i>FH</a>
+            <ul class="hidden md:flex space-x-6 font-fira-code">
+                <li><a href="index.html#home" class="hover:text-cyan-400 transition"><i
+                            class="fas fa-home mr-1"></i>Home</a></li>
+                <li><a href="index.html#about" class="hover:text-cyan-400 transition"><i
+                            class="fas fa-user mr-1"></i>About</a></li>
+                <li><a href="index.html#education" class="hover:text-cyan-400 transition"><i
+                            class="fas fa-graduation-cap mr-1"></i>Education</a></li>
+                <li><a href="index.html#experience" class="hover:text-cyan-400 transition"><i
+                            class="fas fa-briefcase mr-1"></i>Experience</a></li>
+                <li><a href="index.html#projects" class="hover:text-cyan-400 transition"><i
+                            class="fas fa-project-diagram mr-1"></i>Projects</a></li>
+                <li><a href="index.html#skills" class="hover:text-cyan-400 transition"><i
+                            class="fas fa-tools mr-1"></i>Skills</a></li>
+                <li><a href="awards-certifications.html" class="hover:text-cyan-400 transition"><i
+                            class="fas fa-trophy mr-1"></i>Awards & Certifications</a></li>
+                <li><a href="contact.html" class="hover:text-cyan-400 transition"><i
+                            class="fas fa-envelope mr-1"></i>Contact</a></li>
+            </ul>
+            <button id="menu-toggle" class="md:hidden text-2xl text-white focus:outline-none"><i
+                    class="fas fa-bars"></i></button>
+        </div>
+        <ul id="mobile-menu" class="hidden flex-col space-y-4 px-6 py-4 bg-black md:hidden relative z-10 font-fira-code">
+            <li><a href="index.html#home" class="hover:text-cyan-400 transition nav-slide-in"><i
+                        class="fas fa-home mr-1"></i>Home</a></li>
+            <li><a href="index.html#about" class="hover:text-cyan-400 transition nav-slide-in"><i
+                        class="fas fa-user mr-1"></i>About</a></li>
+            <li><a href="index.html#education" class="hover:text-cyan-400 transition nav-slide-in"><i
+                        class="fas fa-graduation-cap mr-1"></i>Education</a></li>
+            <li><a href="index.html#experience" class="hover:text-cyan-400 transition nav-slide-in"><i
+                        class="fas fa-briefcase mr-1"></i>Experience</a></li>
+            <li><a href="index.html#projects" class="hover:text-cyan-400 transition nav-slide-in"><i
+                        class="fas fa-project-diagram mr-1"></i>Projects</a></li>
+            <li><a href="index.html#skills" class="hover:text-cyan-400 transition nav-slide-in"><i
+                        class="fas fa-tools mr-1"></i>Skills</a></li>
+            <li><a href="awards-certifications.html" class="hover:text-cyan-400 transition nav-slide-in"><i
+                        class="fas fa-trophy mr-1"></i>Awards & Certifications</a></li>
+            <li><a href="contact.html" class="hover:text-cyan-400 transition nav-slide-in"><i
+                        class="fas fa-envelope mr-1"></i>Contact</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Contact Section -->
+    <section class="min-h-screen flex items-center justify-center px-6 py-20 relative z-10" data-aos="fade-up"
+        data-aos-delay="100">
+        <div class="max-w-lg w-full bg-gray-800 p-8 rounded-lg shadow-lg hover:glow hover:scale-105 transition">
+            <h2 class="text-4xl font-bold text-center mb-8 text-orange-500"><i class="fas fa-envelope mr-2"></i>Get In
+                Touch</h2>
+            <div id="contact-form" class="space-y-6">
+                <div>
+                    <label for="name" class="block text-sm font-medium">Name</label>
+                    <input type="text" id="name"
+                        class="w-full p-3 bg-gray-700 rounded-lg focus:ring-2 focus:ring-orange-500 outline-none"
+                        required>
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium">Email</label>
+                    <input type="email" id="email"
+                        class="w-full p-3 bg-gray-700 rounded-lg focus:ring-2 focus:ring-orange-500 outline-none"
+                        required>
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium">Message</label>
+                    <textarea id="message"
+                        class="w-full p-3 bg-gray-700 rounded-lg focus:ring-2 focus:ring-orange-500 outline-none"
+                        rows="5" required></textarea>
+                </div>
+                <button id="submit-btn"
+                    class="w-full bg-orange-500 text-white px-6 py-3 rounded-lg hover:bg-orange-600 hover:scale-105 transition hover:glow"><i
+                        class="fas fa-paper-plane mr-2"></i>Send Message</button>
+            </div>
+            <div id="success-message" class="hidden text-center space-y-4">
+                <i class="fas fa-check-circle text-orange-500 text-4xl success-check"></i>
+                <p class="text-lg">Message Sent Successfully!</p>
+                <a href="index.html" class="text-orange-500 hover:text-cyan-400 hover:underline"><i
+                        class="fas fa-home mr-2"></i>Back to Home</a>
+            </div>
+            <div class="mt-6 text-center space-y-2">
+                <p><i class="fas fa-phone-alt mr-2"></i>+2348100597712</p>
+                <p><i class="fas fa-envelope mr-2"></i>fakorodehenry@gmail.com</p>
+                <div class="flex justify-center space-x-6 mt-4">
+                    <a href="https://www.linkedin.com/in/fakorode-henry-2663422aa/" target="_blank"
+                        class="text-orange-500 hover:text-cyan-400"><i
+                            class="fab fa-linkedin fa-lg mr-2"></i>LinkedIn</a>
+                    <a href="https://github.com/HenryTech12" target="_blank"
+                        class="text-orange-500 hover:text-cyan-400"><i class="fab fa-github fa-lg mr-2"></i>GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 text-center gradient-bg text-gray-400 relative z-10">
+        <p>&copy; 2025 Fakorode Henry. Built with HTML, TailwindCSS & JS.</p>
+    </footer>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

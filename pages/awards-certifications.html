@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fakorode Henry - Awards & Certifications</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Montserrat:wght@700;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .font-poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .font-montserrat {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .font-fira-code {
+            font-family: 'Fira Code', monospace;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes scalePulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes loaderFade {
+            from {
+                opacity: 1;
+            }
+
+            to {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+
+        @keyframes gradientX {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+
+        .stagger-1 {
+            animation-delay: 0.1s;
+        }
+
+        .stagger-2 {
+            animation-delay: 0.2s;
+        }
+
+        .stagger-3 {
+            animation-delay: 0.3s;
+        }
+
+        .hover\:pulse:hover {
+            animation: scalePulse 0.3s ease-in-out;
+        }
+
+        #loader {
+            animation: loaderFade 1s ease-out forwards 0.5s;
+        }
+
+        .nav-slide-in {
+            animation: fadeIn 0.3s ease-out forwards;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(270deg, #0A0A0A, #1A1A1A, #0A0A0A);
+            background-size: 200% 200%;
+            animation: gradientX 15s ease infinite;
+        }
+
+        .hover\:glow:hover {
+            box-shadow: 0 0 15px rgba(255, 165, 0, 0.5);
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                        montserrat: ['Montserrat', 'sans-serif'],
+                        'fira-code': ['Fira Code', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-black text-white font-poppins antialiased relative">
+    <!-- Loader -->
+    <div id="loader" class="fixed inset-0 bg-black flex items-center justify-center z-50">
+        <i class="fas fa-spinner fa-spin text-orange-500 text-4xl"></i>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full gradient-bg backdrop-blur-md z-40 shadow-lg">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center relative z-10">
+            <a href="index.html" class="text-2xl font-bold text-orange-500 font-fira-code"><i
+                    class="fas fa-code mr-2"></i>FH</a>
+            <ul class="hidden md:flex space-x-6 font-fira-code">
+                <li><a href="index.html#home" class="hover:text-cyan-400 transition"><i
+                            class="fas fa-home mr-1"></i>Home</a></li>
+                <li><a href="index.html#about" class="hover:text-cyan-400 transition"><i
+                            class="fas fa-user mr-1"></i>About</a></li>
+                <li><a href="index.html#education" class="hover:text-cyan-400 transition"><i
+                            class="fas fa-graduation-cap mr-1"></i>Education</a></li>
+                <li><a href="index.html#experience" class="hover:text-cyan-400 transition"><i
+                            class="fas fa-briefcase mr-1"></i>Experience</a></li>
+                <li><a href="index.html#projects" class="hover:text-cyan-400 transition"><i
+                            class="fas fa-project-diagram mr-1"></i>Projects</a></li>
+                <li><a href="index.html#skills" class="hover:text-cyan-400 transition"><i
+                            class="fas fa-tools mr-1"></i>Skills</a></li>
+                <li><a href="awards-certifications.html" class="hover:text-cyan-400 transition"><i
+                            class="fas fa-trophy mr-1"></i>Awards & Certifications</a></li>
+                <li><a href="contact.html" class="hover:text-cyan-400 transition"><i
+                            class="fas fa-envelope mr-1"></i>Contact</a></li>
+            </ul>
+            <button id="menu-toggle" class="md:hidden text-2xl text-white focus:outline-none"><i
+                    class="fas fa-bars"></i></button>
+        </div>
+        <ul id="mobile-menu"
+            class="hidden flex-col space-y-4 px-6 py-4 bg-black md:hidden relative z-10 font-fira-code">
+            <li><a href="index.html#home" class="hover:text-cyan-400 transition nav-slide-in"><i
+                        class="fas fa-home mr-1"></i>Home</a></li>
+            <li><a href="index.html#about" class="hover:text-cyan-400 transition nav-slide-in"><i
+                        class="fas fa-user mr-1"></i>About</a></li>
+            <li><a href="index.html#education" class="hover:text-cyan-400 transition nav-slide-in"><i
+                        class="fas fa-graduation-cap mr-1"></i>Education</a></li>
+            <li><a href="index.html#experience" class="hover:text-cyan-400 transition nav-slide-in"><i
+                        class="fas fa-briefcase mr-1"></i>Experience</a></li>
+            <li><a href="index.html#projects" class="hover:text-cyan-400 transition nav-slide-in"><i
+                        class="fas fa-project-diagram mr-1"></i>Projects</a></li>
+            <li><a href="index.html#skills" class="hover:text-cyan-400 transition nav-slide-in"><i
+                        class="fas fa-tools mr-1"></i>Skills</a></li>
+            <li><a href="awards-certifications.html" class="hover:text-cyan-400 transition nav-slide-in"><i
+                        class="fas fa-trophy mr-1"></i>Awards & Certifications</a></li>
+            <li><a href="contact.html" class="hover:text-cyan-400 transition nav-slide-in"><i
+                        class="fas fa-envelope mr-1"></i>Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Awards & Certifications Section -->
+    <section id="awards-certifications" class="py-20 px-6 max-w-7xl mx-auto relative z-10" data-aos="zoom-in">
+        <h2 class="text-4xl font-bold text-center mb-12 text-orange-500 font-montserrat"><i
+                class="fas fa-trophy mr-2"></i>Awards & Certifications</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Awards -->
+            <div class="bg-gray-800 rounded-lg shadow-lg hover:scale-105 hover:glow transition overflow-hidden"
+                data-aos="fade-up" data-aos-delay="100">
+                <img src="/assets/awards/verifact.jpg" alt="AI Campus Network Hackathon Winner Certificate"
+                    class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold mb-2 font-montserrat">AI Campus Network Hackathon Winner</h3>
+                    <p class="mb-4 font-poppins">Top project for Verifact, a fact-checking app, at the University of
+                        Lagos AI Campus Network Demo Hackathon.</p>
+                </div>
+            </div>
+            <div class="bg-gray-800 rounded-lg shadow-lg hover:scale-105 hover:glow transition overflow-hidden"
+                data-aos="fade-up" data-aos-delay="200">
+                <img src="/assets/awards/quiz.jpg" alt="Debate & Quiz 1st Runner Up Award"
+                    class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold mb-2 font-montserrat">1st Runner Up - Debate & Quiz</h3>
+                    <p class="mb-4 font-poppins">Received 1st Runner Up in the Debate & Quiz Competition at the
+                        University of Lagos.</p>
+                </div>
+            </div>
+            <div class="bg-gray-800 rounded-lg shadow-lg hover:scale-105 hover:glow transition overflow-hidden"
+                data-aos="fade-up" data-aos-delay="300">
+                <img src="/assets/awards/Henry Fakorede.png" alt="FlexiSAF Java Backend Internship Certificate"
+                    class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold mb-2 font-montserrat">FlexiSAF Java Backend Internship</h3>
+                    <p class="mb-4 font-poppins">Completed internship with certificate for developing RESTful APIs and
+                        front-end interfaces.</p>
+                </div>
+            </div>
+            <!-- Certifications -->
+            <div class="bg-gray-800 rounded-lg shadow-lg hover:scale-105 hover:glow transition overflow-hidden"
+                data-aos="fade-up" data-aos-delay="400">
+                <img src="/assets/awards/software-intern.png" alt="HackerRank Software Engineer Intern Certificate"
+                    class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold mb-2 font-montserrat">Software Engineer Intern (HackerRank)</h3>
+                    <p class="mb-4 font-poppins">Certified in Java Development & Problem Solving from HackerRank.</p>
+                </div>
+            </div>
+            <div class="bg-gray-800 rounded-lg shadow-lg hover:scale-105 hover:glow transition overflow-hidden"
+                data-aos="fade-up" data-aos-delay="500">
+                <img src="/assets/awards/sql-i.png" alt="HackerRank Intermediate SQL Certificate"
+                    class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold mb-2 font-montserrat">Intermediate SQL Certificate</h3>
+                    <p class="mb-4 font-poppins">HackerRank certification for intermediate SQL skills in database
+                        management.</p>
+                </div>
+            </div>
+            <div class="bg-gray-800 rounded-lg shadow-lg hover:scale-105 hover:glow transition overflow-hidden"
+                data-aos="fade-up" data-aos-delay="700">
+                <img src="/assets/awards/java-basic.png" alt="HackerRank Java Basic Certificate"
+                    class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold mb-2 font-montserrat">Java Basic Certificate</h3>
+                    <p class="mb-4 font-poppins">HackerRank certification for foundational Java programming skills.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 text-center gradient-bg text-gray-400 font-poppins relative z-10">
+        <p>&copy; 2025 Fakorode Henry. Built with HTML, TailwindCSS & JS.</p>
+    </footer>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
