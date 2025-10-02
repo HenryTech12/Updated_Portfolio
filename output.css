@@ -336,6 +336,9 @@
   .h-52 {
     height: calc(var(--spacing) * 52);
   }
+  .h-auto {
+    height: auto;
+  }
   .h-full {
     height: 100%;
   }
