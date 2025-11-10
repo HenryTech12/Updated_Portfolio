@@ -40,7 +40,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Typed.js for hero text
 if (document.getElementById('typed-text')) {
     new Typed('#typed-text', {
-        strings: ['Full-Stack Java Developer', 'Spring Boot Specialist', 'Front-End Enthusiast'],
+        strings: ['Full-Stack Java Developer', 'Spring Boot Specialist', 'Front-End Enthusiast', 'Python Backend Developer'],
         typeSpeed: 50,
         backSpeed: 30,
         backDelay: 1000,

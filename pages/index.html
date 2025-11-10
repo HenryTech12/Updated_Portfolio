@@ -17,6 +17,7 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <!-- Particles.js -->
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="../output.css">
     <style>
         /* Tailwind Font Configuration */
         .font-poppins {
@@ -196,6 +197,9 @@
             }
         }
     </script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
 </head>
 
 <body class="bg-black text-white font-poppins antialiased relative">
@@ -257,16 +261,37 @@
     <section id="home" class="min-h-screen flex items-center justify-center text-center px-6 pt-24 relative z-10"
         data-aos="fade-up">
         <div class="max-w-4xl">
-            <img src="/assets/projects-img/me.jpg" alt="Fakorode Henry"
+            <img src="../assets/projects-img/me.jpg" alt="Fakorode Henry"
                 class="w-52 h-auto rounded-full mx-auto mb-6 border-4 border-orange-500 hover:glow hover:scale-105 transition">
             <h1 class="text-5xl md:text-6xl font-bold mb-4 font-montserrat">Fakorode Henry</h1>
             <p class="text-xl mb-6 font-fira-code">
                 <span id="typed-text"></span>
                 <span class="text-orange-500 typing-cursor">|</span>
             </p>
-            <a href="#projects"
-                class="bg-orange-500 text-white px-8 py-3 rounded-lg hover:bg-orange-600 hover:scale-105 transition hover:glow font-poppins"><i
-                    class="fas fa-eye mr-2"></i>View My Work</a>
+            <section class="flex items-center justify-evenly gap-4 mt-4">
+                <a href="./contact.html"
+                    class="text-white shadow-lg flex gap-2 px-2 py-3 rounded-2xl border border-white bg-orange-500">
+                    <span class="material-symbols-outlined">
+                        mail
+                    </span>
+                    <span>Hire Me</span>
+                </a>
+                <a href="../assets/Fakorode Odunayo Henry - Backend Java & Python Developer-1762731863.pdf" download
+                    class="text-white shadow-lg flex gap-2 px-2 py-3 rounded-2xl border border-white bg-black transition duration-75 hover:bg-gray-300">
+                    <span class="material-symbols-outlined">
+                        arrow_cool_down
+                    </span>
+                    <span>Download CV</span>
+                </a>
+                <a href="index.html#projects"
+                    class="text-white shadow-lg flex gap-2 px-2 py-3 rounded-2xl border border-white">
+                    <span>View My Work</span>
+                    <span class="material-symbols-outlined animate-bounce">
+                        arrow_right_alt
+                    </span>
+                </a>
+
+            </section>
         </div>
     </section>
 
@@ -495,6 +520,28 @@
                     </div>
                 </div>
             </div>
+            <div class="skill-card h-48 hover:glow" data-aos="flip-left" data-aos-delay="200">
+                <div class="skill-card-inner relative w-full h-full">
+                    <!-- Front Side -->
+                    <div class="skill-card-front flex flex-col items-center justify-center bg-gray-800 rounded-lg p-4">
+                        <svg class="w-24 h-24" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="#374151" stroke-width="10" />
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="#06B6D4" stroke-width="10" stroke-dasharray="283"
+                                stroke-dashoffset="283" class="progress-ring" style="--progress-offset: 75.5" />
+                        </svg>
+                        <i class="fab fa-python text-cyan-400 text-2xl absolute top-8 left-1/2 -translate-x-1/2"></i>
+                        <h3 class="mt-2 font-semibold font-montserrat">Python/Django</h3>
+                        <p class="text-sm text-gray-400 font-poppins">95%</p>
+                    </div>
+            
+                    <!-- Back Side -->
+                    <div class="skill-card-back bg-gray-800 rounded-lg p-4 text-center flex flex-col items-center justify-center">
+                        <i class="fab fa-python text-cyan-400 text-2xl mb-2"></i>
+                        <p class="text-sm font-poppins">For building backend Rest APIs Using Django</p>
+                    </div>
+                </div>
+            </div>
+
             <div class="skill-card h-48 hover:glow" data-aos="flip-left" data-aos-delay="200">
                 <div class="skill-card-inner relative w-full h-full">
                     <div class="skill-card-front flex flex-col items-center justify-center bg-gray-800 rounded-lg p-4">
